@@ -28,11 +28,7 @@ public class Pharmacy {
     // This method should return the requested Medication with this name.
     // If no Medication with this name is found, the method should return null.
     public Medication find(String medicationName){
-        if (medicationMap.containsKey(medicationName)) {
-            return medicationMap.get(medicationName);
-        } else {
-            return null;
-        }
+        return medicationMap.get(medicationName);
     }
 
     // Step 6:

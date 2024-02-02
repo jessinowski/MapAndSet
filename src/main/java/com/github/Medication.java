@@ -8,6 +8,7 @@ public class Medication {
     private double price;
     private boolean availability;
 
+    //Constructor
     public Medication(String name, double price, boolean availability) {
         this.name = name;
         this.price = price;
