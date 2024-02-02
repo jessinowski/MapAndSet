@@ -2,33 +2,35 @@ package com.github;
 
 public class Main {
     public static void main(String[] args) {
-    // Step 1:
-    Medication ibu = new Medication("Ibuprofen", 10.90, true);
-    Medication kytta = new Medication("Kytta", 15.50, true);
-    Medication aspirin = new Medication("Aspirin", 5.50, false);
-    Medication salbei = new Medication("Salbei", 3.60, true);
+        // Step 1:
+        Medication ibu = new Medication("Ibuprofen", 10.90, true);
+        Medication kytta = new Medication("Kytta", 15.50, true);
+        Medication aspirin = new Medication("Aspirin", 5.50, false);
+        Medication salbei = new Medication("Salbei", 3.60, true);
 
-    // Step 2:
-    Pharmacy apotheke =new Pharmacy();
+        // Step 2:
+        Pharmacy apotheke = new Pharmacy();
 
-    // Step 3:
-    System.out.println(apotheke.getCount());
+        // Step 3:
+        System.out.println(apotheke.getCount());
 
-    // Step 4:
-    apotheke.save(ibu);
-    apotheke.save(kytta);
-    apotheke.save(aspirin);
-    apotheke.save(salbei);
-    System.out.println(apotheke.getCount());
+        // Step 4:
+        apotheke.save(ibu);
+        apotheke.save(kytta);
+        apotheke.save(aspirin);
+        apotheke.save(salbei);
+        System.out.println(apotheke.getCount());
 
-    // Step 5:
-    System.out.println(apotheke.find("Ibuprofen"));
+        // Step 5:
+        System.out.println();
+        System.out.println(apotheke.find("Ibuprofen"));
 
-    // Step 6:
-    apotheke.delete("Ibuprofen");
+        // Step 6:
+        apotheke.delete("Ibuprofen");
 
-    // Step 7:
-    System.out.println(apotheke);
+        // Step 7:
+        System.out.println();
+        System.out.println(apotheke);
 
  /* // Step 1:
     Convert your application from the List lecture so that the School Object uses a Hashmap
